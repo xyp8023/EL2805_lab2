@@ -1,0 +1,16 @@
+(f) 1
+EPISODES = 1000 #Maximum number of episodes
+#Set hyper parameters for the DQN. Do not adjust those labeled as Fixed.
+self.discount_factor = 0.95
+self.learning_rate = 0.005
+self.epsilon = 0.02 #Fixed
+self.batch_size = 32 #Fixed
+self.memory_size = 1000
+self.train_start = 1000 #Fixed
+self.target_update_frequency = 1
+model.add(Dense(16, input_dim=self.state_size, activation='relu', kernel_initializer='he_uniform') )
+model.add(Dense(32,  activation='relu', kernel_initializer='he_uniform') )
+model.add(Dense(self.action_size, activation='linear', kernel_initializer='he_uniform'))
+average score over last 100 episodes:   121.28
+
+
