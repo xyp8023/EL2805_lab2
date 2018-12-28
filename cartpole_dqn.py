@@ -27,8 +27,8 @@ class DQNAgent:
 ################################################################################
 ################################################################################
         #Set hyper parameters for the DQN. Do not adjust those labeled as Fixed.
-        self.discount_factor = 0.9
-        self.learning_rate = 0.005
+        self.discount_factor = 0.995
+        self.learning_rate = 0.01
         self.epsilon = 0.02 #Fixed
         self.batch_size = 32 #Fixed
         self.memory_size = 10000
